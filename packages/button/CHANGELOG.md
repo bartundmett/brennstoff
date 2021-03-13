@@ -1,6 +1,11 @@
 # @brennstoff/button
 
-## 0.0.2
+## 0.1.0
+### Minor Changes
+
+- 83b115e: Added theming of components, some helpers and a button component
+
 ### Patch Changes
 
-- c974dae: Created basic structure for package library
+- Updated dependencies [83b115e]
+  - @brennstoff/core@0.1.0

@@ -1,13 +1,9 @@
 {
   "name": "@brennstoff/button",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "button package",
-  "author": "Benedikt Grimm <benedikt.grimm@bartundmett.de>",
+  "author": "",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bartundmett/brennstoff.git"
-  },
   "scripts": {
     "dev": "tsdx watch --tsconfig tsconfig.build.json --verbose --noClean",
     "build": "tsdx build --tsconfig tsconfig.build.json",
@@ -24,12 +20,10 @@
   ],
   "peerDependencies": {
     "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "styled-components": "^5.2.1",
-    "styled-system": "^5.1.5",
-    "@styled-system/theme-get": "^5.1.2"
+    "react-dom": "^17.0.1"
   },
   "dependencies": {
-    "tslib": "^2.0.0"
+    "tslib": "^2.0.0",
+    "@brennstoff/core": "0.1.0"
   }
 }

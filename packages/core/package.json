@@ -1,9 +1,13 @@
 {
-  "name": "@brennstoff/basetheme",
+  "name": "@brennstoff/core",
   "version": "0.1.0",
-  "description": "Brennstoff default theme package",
+  "description": "Core Package",
   "author": "Benedikt Grimm <benedikt.grimm@bartundmett.de>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bartundmett/brennstoff.git"
+  },
   "scripts": {
     "dev": "tsdx watch --tsconfig tsconfig.build.json --verbose --noClean",
     "build": "tsdx build --tsconfig tsconfig.build.json",
@@ -12,7 +16,7 @@
     "prepublish": "npm run build"
   },
   "main": "dist/index.js",
-  "module": "dist/basetheme.esm.js",
+  "module": "dist/theme.esm.js",
   "typings": "dist/index.d.ts",
   "files": [
     "README.md",
@@ -23,7 +27,14 @@
     "react-dom": "^17.0.1"
   },
   "dependencies": {
-    "tslib": "^2.0.0",
-    "@brennstoff/core": "0.1.0"
-  }
+    "@types/styled-components": "^5.1.7",
+    "@types/styled-system": "^5.1.10",
+    "@types/styled-system__theme-get": "^5.0.1",
+    "@styled-system/theme-get": "^5.1.2",
+    "@brennstoff/basetheme": "0.1.0",
+    "styled-components": "^5.2.1",
+    "styled-system": "^5.1.5",
+    "tslib": "^2.0.0"
+  },
+  "devDependencies": {}
 }

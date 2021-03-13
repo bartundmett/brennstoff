@@ -4,6 +4,11 @@
   "description": "<%= projectName %> package",
   "author": "",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bartundmett/brennstoff.git"
+  },
+  "homepage": "https://github.com/bartundmett/brennstoff/tree/main/packages/<%= projectName %>",
   "scripts": {
     "dev": "tsdx watch --tsconfig tsconfig.build.json --verbose --noClean",
     "build": "tsdx build --tsconfig tsconfig.build.json",
@@ -20,10 +25,10 @@
   ],
   "peerDependencies": {
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "@brennstoff/core": "latest"
   },
   "dependencies": {
-    "tslib": "^2.0.0",
-    "@brennstoff/core": "latest"
+    "tslib": "^2.0.0"
   }
 }

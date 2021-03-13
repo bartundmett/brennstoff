@@ -8,6 +8,7 @@
   },
   "scripts": {
     "preinstall": "node -e \"if (process.env.npm_execpath.indexOf('yarn') === -1) throw new Error('Use yarn for installing: https://yarnpkg.com/en/docs/install')\"",
+    "postinstall": "yarn run lerna bootstrap",
     "lerna": "lerna",
     "start": "lerna run dev --stream --parallel",
     "watch": "concurrently \"lerna run dev --stream --parallel\" \"yarn storybook:watch\"",

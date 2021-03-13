@@ -1,4 +1,5 @@
 <div align="center">
+  <img src="./docs/assets/fire.svg" height="90px" />
   <h1 align="center">
     Brennstoff
   </h1>

@@ -1,0 +1,26 @@
+examples:
+  - example/*
+  - example/**/*
+
+ui:
+  - packages/ui/*
+  - packages/ui/**/*
+
+core:
+  - packages/core/*
+  - packages/core/**/*
+
+button:
+  - packages/ui/*
+  - packages/ui/**/*
+
+basetheme:
+  - packages/basetheme/*
+  - packages/basetheme/**/*
+
+cypress:
+  - cypress/*
+  - cypress/**/*
+
+repo:
+  - ./*

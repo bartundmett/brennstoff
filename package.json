@@ -14,7 +14,7 @@
     "generate": "ts-node bin/generator && yarn",
     "test": "lerna run test --",
     "lint": "lerna run lint -- --fix",
-    "build": "lerna run build",
+    "build": "yarn --cwd ./packages/core && lerna run build",
     "prepublish": "lerna run build",
     "changeset": "changeset",
     "release": "changeset publish",

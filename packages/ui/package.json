@@ -1,6 +1,6 @@
 {
   "name": "@brennstoff/ui",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "All ui package",
   "author": "Benedikt Grimm <benedikt.grimm@bartundmett.de>",
   "license": "MIT",
@@ -24,8 +24,8 @@
   },
   "dependencies": {
     "tslib": "^2.0.0",
-    "@brennstoff/core": "^0.1.4",
-    "@brennstoff/basetheme": "^0.1.4",
-    "@brennstoff/button": "^0.1.4"
+    "@brennstoff/core": "^0.1.5",
+    "@brennstoff/basetheme": "^0.1.5",
+    "@brennstoff/button": "^0.1.5"
   }
 }

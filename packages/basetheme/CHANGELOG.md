@@ -1,5 +1,13 @@
 # @brennstoff/basetheme
 
+## 0.1.5
+
+### Patch Changes
+
+- 75c5b1c: Added shields to readme
+- Updated dependencies [75c5b1c]
+  - @brennstoff/core@0.1.5
+
 ## 0.1.4
 
 ### Patch Changes

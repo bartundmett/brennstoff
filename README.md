@@ -1,69 +1,63 @@
-# Stack
+<div align="center">
+  <h1 align="center">
+    Brennstoff
+  </h1>
+</div>
 
-For the component library itself (peer dependencies):
+<p align="center">
+<a href="https://bundlephobia.com/result?p=@brennstoff/ui">
+    <img alt="Bundlephobia" src="https://img.shields.io/bundlephobia/minzip/@brennstoff/ui?style=for-the-badge&labelColor=24292e">
+  </a>
+  <a aria-label="Types" href="https://www.npmjs.com/package/@brennstoff/ui">
+    <img alt="Types" src="https://img.shields.io/npm/types/@brennstoff/ui?style=for-the-badge&labelColor=24292e">
+  </a>
+<a href="https://www.npmjs.com/package/@brennstoff/ui"><img src="https://img.shields.io/npm/v/@brennstoff/ui?style=for-the-badge&labelColor=24292e"></a>
+<a href="https://www.npmjs.com/package/@brennstoff/ui"><img src="https://img.shields.io/npm/l/@brennstoff/ui?style=for-the-badge&labelColor=24292e"></a>
+<p>
 
-- React
-- Styled-Components
-- Styled-System
+<pre align="center">yarn add @brennstoff/ui</pre>
 
-Development Tooling:
+<hr>
 
-- Prettier
-- Typescript
-- Storybook
-- Playroom
+## Why
 
-Testing:
+Needed some component library to match my needs and have all the crazy stuff
+i wanted to reuse between projects.
 
-- Cypress
-- Testing Library / React
+So here we go, contains an ui package that has all the components.
+But you may use just a few by importing the individual packages.
 
-Release and package management:
+## Quickstart
 
-- changeset
-- lerna
+Install peer dependencies:
 
-# Usage
+<pre>
+yarn add styled-components styled-system
+</pre>
 
-Install components that you want to use
+Use in your react app:
 
-```bash
-yarn add @brennstoff/core @brennstoff/button
-```
-
-Add Brennstoff provider around your application
-and add a theme.
-
-```javascript
-import { Brennstoff } from '@brennstoff/core';
-import Button from '@brennstoff/button';
-
-const myTheme = {
-  colors: {
-    primary: 'black',
-  },
-  components: {
-    ...
-  }
-}
+```jsx harmony
+import { Brennstoff, theme, Button } from '@brennstoff/ui';
 
 function App() {
   return (
-    <Brennstoff theme={myTheme}>
-      <Button>My Button</Button>
+    <Brennstoff theme={theme}>
+      <Button>Hello</Button>
     </Brennstoff>
   );
 }
 ```
 
-You may use the `@brennstoff/basetheme` as a starting point.
+Use the default theme or provide your own.
 
-# Base commands
+## Under the hood
+
+React, Styled-Components, Styled-System, Prettier, Typescript, Storybook, Playroom, Cypress, Testing Library, Changeset, Lerna
 
 ## Development
 
-`yarn watch` starts watchers for all packages and opens up storybook, as well as playroom inside of storybook.
-You can develop on any package and it will autorefresh all affected elements.
+`yarn watch` starts watchers for all packages and opens up storybook, as well as playroom inside of storybook. You can develop on any package and it will autorefresh all affected elements.
 
 ## Linting
 
@@ -77,7 +71,7 @@ You can develop on any package and it will autorefresh all affected elements.
 
 `yarn build` generates TSDX builds for all packages.
 
-# Generator for new packages
+## Generator for new packages
 
 `yarn generate`
 -> Package Template
@@ -95,19 +89,19 @@ Will generate a @brennstoff/box scoped component boilerplate in packages/box.
 
 Add your new package to the tsconfig.json.
 
-# Example Project
+## Example Project
 
 You can add '@brennstoff/package' dependencies in your project.
 See example project for reference.
 
 Start the example by using `yarn example`. Be sure to have build your packages before with `yarn build`.
 
-# Playroom
+## Playroom
 
 The setup comes with a playroom for quick component composition testing.
 Add your components in `playroom/components.ts` and your themes in `playroom/themes.ts`.
 
-# Releasing
+## Releasing
 
 `yarn bundle` lets you select which packages to include in your release.
 Select which packages get a major or minor update. If none is selected it will be a patch update.
@@ -118,3 +112,7 @@ Every package will automatically create or update its CHANGELOG.md file with the
 Git tags for each package will be created.
 
 You can now commit and push your changes. (dont forget to push your tags as well `git push --tags`).
+
+## LICENSE
+
+MIT

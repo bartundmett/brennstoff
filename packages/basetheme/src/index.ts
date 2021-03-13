@@ -1,4 +1,4 @@
-import tokens from './tokens';
+import * as tokens from './tokens';
 import components from './components';
 
 export default {

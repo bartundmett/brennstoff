@@ -1,14 +1,15 @@
 import 'react-app-polyfill/ie11';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { Button } from '@brennstoff/button';
-import theme, { ThemeProvider } from '@brennstoff/theme';
+import Button from '@brennstoff/button';
+import { Brennstoff } from '@brennstoff/core';
+import defaultTheme from '@brennstoff/basetheme';
 
 const App = () => {
   return (
-    <ThemeProvider theme={theme}>
+    <Brennstoff theme={defaultTheme}>
       <Button>Test Button</Button>
-    </ThemeProvider>
+    </Brennstoff>
   );
 };
 

@@ -15,8 +15,8 @@ export default {
     },
 
     textTransform: 'uppercase',
-    paddingLeft: space[4],
-    paddingRight: space[4],
+    paddingLeft: space[8],
+    paddingRight: space[8],
   },
   stretched: {
     true: {
@@ -77,8 +77,8 @@ export default {
     l: {
       fontSize: typography.fontSizes.base,
       height: '56px',
-      paddingLeft: space[6],
-      paddingRight: space[6],
+      paddingLeft: space[10],
+      paddingRight: space[10],
     },
   },
 };

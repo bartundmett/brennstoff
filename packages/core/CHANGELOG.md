@@ -1,5 +1,12 @@
 # @brennstoff/basetheme
 
+## 0.1.2
+
+### Patch Changes
+
+- Updated dependencies [9cd76db]
+  - @brennstoff/basetheme@0.1.2
+
 ## 0.1.1
 
 ### Patch Changes

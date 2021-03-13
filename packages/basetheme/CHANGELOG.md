@@ -1,5 +1,12 @@
 # @brennstoff/basetheme
 
+## 0.1.2
+
+### Patch Changes
+
+- 9cd76db: Fixed tokens in theme
+  - @brennstoff/core@0.1.2
+
 ## 0.1.1
 
 ### Patch Changes

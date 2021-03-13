@@ -1,5 +1,13 @@
 # @brennstoff/button
 
+## 0.1.6
+
+### Patch Changes
+
+- 12c4b18: Changed dependencies to peer dependencies
+- Updated dependencies [12c4b18]
+  - @brennstoff/core@0.1.6
+
 ## 0.1.5
 
 ### Patch Changes

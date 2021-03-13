@@ -1,6 +1,6 @@
 {
   "name": "@brennstoff/button",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "button package",
   "author": "",
   "license": "MIT",
@@ -21,7 +21,7 @@
   "peerDependencies": {
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "@brennstoff/core": "0.1.5"
+    "@brennstoff/core": "0.1.6"
   },
   "dependencies": {
     "tslib": "^2.0.0"

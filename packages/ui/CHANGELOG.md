@@ -1,5 +1,15 @@
 # @brennstoff/ui
 
+## 0.0.5
+
+### Patch Changes
+
+- 12c4b18: Changed dependencies to peer dependencies
+- Updated dependencies [12c4b18]
+  - @brennstoff/basetheme@0.1.6
+  - @brennstoff/button@0.1.6
+  - @brennstoff/core@0.1.6
+
 ## 0.0.4
 
 ### Patch Changes

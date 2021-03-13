@@ -1,5 +1,11 @@
 # @brennstoff/basetheme
 
+## 0.1.6
+
+### Patch Changes
+
+- 12c4b18: Changed dependencies to peer dependencies
+
 ## 0.1.5
 
 ### Patch Changes

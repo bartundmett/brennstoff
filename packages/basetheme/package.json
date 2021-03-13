@@ -1,6 +1,6 @@
 {
   "name": "@brennstoff/basetheme",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Brennstoff default theme package",
   "author": "Benedikt Grimm <benedikt.grimm@bartundmett.de>",
   "license": "MIT",
@@ -24,6 +24,6 @@
   },
   "dependencies": {
     "tslib": "^2.0.0",
-    "@brennstoff/core": "0.1.0"
+    "@brennstoff/core": "0.1.1"
   }
 }

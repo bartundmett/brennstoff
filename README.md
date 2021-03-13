@@ -12,9 +12,11 @@
     <img alt="Types" src="https://img.shields.io/npm/types/@brennstoff/ui?style=for-the-badge&labelColor=24292e">
   </a>
 <a href="https://www.npmjs.com/package/@brennstoff/ui"><img src="https://img.shields.io/npm/v/@brennstoff/ui?style=for-the-badge&labelColor=24292e"></a>
-<a href="https://www.npmjs.com/package/@brennstoff/ui"><img src="https://img.shields.io/npm/l/@brennstoff/ui?style=for-the-badge&labelColor=24292e"></a>
 <p>
-
+<p align="center">
+<a href="https://www.npmjs.com/package/styled-components"><img src="https://img.shields.io/npm/dependency-version/@brennstoff/core/peer/styled-components?style=for-the-badge&labelColor=24292e"></a>
+<a href="https://www.npmjs.com/package/styled-system"><img src="https://img.shields.io/npm/dependency-version/@brennstoff/core/peer/styled-system?style=for-the-badge&labelColor=24292e"></a>
+</p>
 <pre align="center">yarn add @brennstoff/ui</pre>
 
 <hr>

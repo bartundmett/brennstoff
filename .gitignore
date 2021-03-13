@@ -1,0 +1,15 @@
+*.log
+.DS_Store
+node_modules
+dist
+
+node_modules
+package-lock.json
+yarn.lock
+coverage
+.jest-coverage
+.jest-cache
+!/yarn.lock
+
+.yalc
+yalc.lock

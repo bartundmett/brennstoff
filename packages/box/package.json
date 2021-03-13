@@ -1,0 +1,31 @@
+{
+  "name": "@brennstoff/box",
+  "version": "0.0.1",
+  "description": "box package",
+  "author": "Benedikt Grimm <benedikt.grimm@bartundmett.de>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsdx watch --tsconfig tsconfig.build.json --verbose --noClean",
+    "build": "tsdx build --tsconfig tsconfig.build.json",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepublish": "npm run build"
+  },
+  "main": "dist/index.js",
+  "module": "dist/box.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "README.md",
+    "dist"
+  ],
+  "peerDependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "styled-components": "^5.2.1",
+    "styled-system": "^5.1.5",
+    "@styled-system/theme-get": "^5.1.2"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
+}

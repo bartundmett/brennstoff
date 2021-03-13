@@ -1,5 +1,13 @@
 # @brennstoff/button
 
+## 0.1.3
+
+### Patch Changes
+
+- e0f2969: Fixed button props and removed dependency on basetheme
+- Updated dependencies [e0f2969]
+  - @brennstoff/core@0.1.3
+
 ## 0.1.2
 
 ### Patch Changes

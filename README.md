@@ -19,13 +19,119 @@
 
 <hr>
 
-## Why
-
 Needed some component library to match my needs and have all the crazy stuff
 i wanted to reuse between projects.
 
 So here we go, contains an ui package that has all the components.
 But you may use just a few by importing the individual packages.
+
+Makes use of the beautifully crafted scales from `tailwind`
+and takes it to a themable component with `styled-system` props.
+
+E.g.:
+&lt;Button&gt; has the `space` and `position` props from styled-system.
+That uses the `themes` space tokens.
+
+```js
+const theme = {
+  space: ['0', '0.25rem', '0.5rem'];
+  ...
+};
+```
+
+```jsx harmony
+<Button mx={2}>Button</Button>
+```
+
+Will give the button the theme defined margin-x of 0.5rem.
+All of styled systems aliases also work.
+
+```js
+const space = ['0', '0.25rem', '0.5rem'];
+space.sm = space[3];
+const theme = {
+  space,
+  ...
+};
+```
+
+```jsx harmony
+<Button mx="sm">Button</Button>
+```
+
+Making use of styled systems variants composition and the theming, each component comes with a set of variations that can be themed.
+
+Our button has a `size`, `stretched` and a `variant` definition, which can be styled in the theme and also can integrate any styled that are shared accross all variations.
+
+All of styled components/styled systems styling possibilities are available.
+So you can also style pseudo selectors.
+
+```js
+const tokens = {
+  space: [0, '0.25rem', '0.5rem'];
+}
+const theme = {
+  ...tokens,
+  components: {
+    button: {
+      shared: {
+        paddingLeft: tokens.space[2],
+        paddingRight: tokens.space[2],
+      },
+      variant: {
+        primary: {
+          color: tokens.colors.white,
+          backgroundColor: tokens.colors.primary,
+          '&:hover': {
+            backgroundColor: tokens.colors.primaryLight,
+          }
+        },
+        secondary: {
+          color: tokens.colors.white,
+          backgroundColor: tokens.colors.secondary,
+          '&:hover': {
+            backgroundColor: tokens.colors.secondaryLight,
+          }
+        }
+      },
+      size: {
+        s: {
+          fontSize: tokens.fontSizes.sm,
+        },
+        m: {
+          fontSize: tokens.fontSizes.m,
+        },
+      },
+      stretched: {
+        true: {
+          width: '100%',
+        }
+      }
+    }
+  }
+}
+```
+
+This way we can use our component like so:
+
+```jsx harmony
+<>
+  <Button size="s" variant="primary">
+    Primary Button in small
+  </Button>
+  <Button size="m" variant="secondary">
+    Secondary Button in medium
+  </Button>
+
+  <Button size="m" variant="secondary" stretched>
+    Secondary Button in medium that is stretched
+  </Button>
+
+  <Button size="m" variant="secondary" mt="sm">
+    Secondary Button in medium with margin prop
+  </Button>
+</>
+```
 
 ## Quickstart
 
@@ -53,25 +159,27 @@ Use the default theme or provide your own.
 
 ## Under the hood
 
-React, Styled-Components, Styled-System, Prettier, Typescript, Storybook, Playroom, Cypress, Testing Library, Changeset, Lerna
+React, Styled-Components, Styled-System, Prettier, Typescript, Storybook, Playroom, Cypress, Testing Library, Changeset, Lerna.
 
-## Development
+I was frustated with the development workflow so i took what i saw as the best out there to build my components. Totally opinionated :).
+
+### Development
 
 `yarn watch` starts watchers for all packages and opens up storybook, as well as playroom inside of storybook. You can develop on any package and it will autorefresh all affected elements.
 
-## Linting
+### Linting
 
 `yarn lint`
 
-## Testing
+### Testing
 
 `yarn test`
 
-## Building
+### Building
 
 `yarn build` generates TSDX builds for all packages.
 
-## Generator for new packages
+### Generator for new packages
 
 `yarn generate`
 -> Package Template
@@ -89,19 +197,19 @@ Will generate a @brennstoff/box scoped component boilerplate in packages/box.
 
 Add your new package to the tsconfig.json.
 
-## Example Project
+### Example Project
 
 You can add '@brennstoff/package' dependencies in your project.
 See example project for reference.
 
 Start the example by using `yarn example`. Be sure to have build your packages before with `yarn build`.
 
-## Playroom
+### Playroom
 
 The setup comes with a playroom for quick component composition testing.
 Add your components in `playroom/components.ts` and your themes in `playroom/themes.ts`.
 
-## Releasing
+### Releasing
 
 `yarn bundle` lets you select which packages to include in your release.
 Select which packages get a major or minor update. If none is selected it will be a patch update.

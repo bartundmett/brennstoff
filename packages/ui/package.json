@@ -8,6 +8,7 @@
     "type": "git",
     "url": "git+https://github.com/bartundmett/brennstoff.git"
   },
+  "homepage": "https://github.com/bartundmett/brennstoff/",
   "scripts": {
     "dev": "tsdx watch --tsconfig tsconfig.build.json --verbose --noClean",
     "build": "tsdx build --tsconfig tsconfig.build.json",

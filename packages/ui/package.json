@@ -1,7 +1,7 @@
 {
-  "name": "@brennstoff/basetheme",
-  "version": "0.1.4",
-  "description": "Brennstoff default theme package",
+  "name": "@brennstoff/ui",
+  "version": "0.0.2",
+  "description": "All ui package",
   "author": "Benedikt Grimm <benedikt.grimm@bartundmett.de>",
   "license": "MIT",
   "scripts": {
@@ -12,7 +12,7 @@
     "prepublish": "npm run build"
   },
   "main": "dist/index.js",
-  "module": "dist/basetheme.esm.js",
+  "module": "dist/ui.esm.js",
   "typings": "dist/index.d.ts",
   "files": [
     "README.md",
@@ -24,6 +24,8 @@
   },
   "dependencies": {
     "tslib": "^2.0.0",
-    "@brennstoff/core": "0.1.4"
+    "@brennstoff/core": "^0.1.4",
+    "@brennstoff/basetheme": "^0.1.4",
+    "@brennstoff/button": "^0.1.4"
   }
 }

@@ -20,16 +20,10 @@
   ],
   "peerDependencies": {
     "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "styled-components": "^5.2.1",
-    "styled-system": "^5.1.5",
-    "@styled-system/theme-get": "^5.1.2"
+    "react-dom": "^17.0.1"
   },
   "dependencies": {
-    "tslib": "^2.0.0"
-  },
-  "publishConfig": {
-    "access": "restricted",
-    "registry": "http://localhost:4873"
+    "tslib": "^2.0.0",
+    "@brennstoff/core": "latest"
   }
 }

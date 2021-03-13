@@ -1,0 +1,1283 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import StoryWrapper from '../../../.storybook/story-wrapper';
+
+import Button from '.';
+
+<Meta title="Controls/Button" component={Button} />
+
+# Button
+
+<Preview>
+  <Story name="Default">
+    <Button>Default Button</Button>
+  </Story>
+</Preview>
+
+# Component Props
+You can also use any native react props or html props as desired (for example `onClick`).
+The button component comes with a polymorphic `as` prop, to enable you to render to any html element you need (e.g. `as="a"`).
+Ref is being forwarded to the `HTMLElement`.
+
+<Props of={Button} />
+
+# Variants
+
+Never use more than ONE primary button on a page-view.
+The primary button should help the user in his actions by leading him on a page-view.
+Use carefully a primary button, only when it is needed and do not mislead the user to unwanted actions.
+
+## Primary
+
+<Preview>
+  <Story name="Variant: Primary">
+    <StoryWrapper>
+      <Button size="xs" variant="primary">
+        XSmall
+      </Button>
+      <Button size="s" variant="primary">
+        Small
+      </Button>
+      <Button size="m" variant="primary">
+        Medium
+      </Button>
+      <Button size="l" variant="primary">
+        Large
+      </Button>
+    </StoryWrapper>
+    <StoryWrapper>
+      <Button size="xs" variant="primary" disabled>
+        XSmall disabled
+      </Button>
+      <Button size="s" variant="primary" disabled>
+        Small disabled
+      </Button>
+      <Button size="m" variant="primary" disabled>
+        Medium disabled
+      </Button>
+      <Button size="l" variant="primary" disabled>
+        Large disabled
+      </Button>
+    </StoryWrapper>
+    <StoryWrapper>
+      <Button size="xs" variant="primary" stretched>
+        XSmall stretched
+      </Button>
+      <Button size="s" variant="primary" stretched>
+        Small stretched
+      </Button>
+      <Button size="m" variant="primary" stretched>
+        Medium stretched
+      </Button>
+      <Button size="l" variant="primary" stretched>
+        Large stretched
+      </Button>
+    </StoryWrapper>
+    <StoryWrapper>
+      <Button size="xs" variant="primary" stretched disabled>
+        XSmall disabled stretched
+      </Button>
+      <Button size="s" variant="primary" stretched disabled>
+        Small disabled stretched
+      </Button>
+      <Button size="m" variant="primary" stretched disabled>
+        Medium disabled stretched
+      </Button>
+      <Button size="l" variant="primary" stretched disabled>
+        Large disabled stretched
+      </Button>
+    </StoryWrapper>
+  </Story>
+</Preview>
+
+## Secondary
+
+<Preview>
+  <Story name="Variant: Secondary">
+    <StoryWrapper>
+      <Button size="xs" variant="secondary">
+        XSmall
+      </Button>
+      <Button size="s" variant="secondary">
+        Small
+      </Button>
+      <Button size="m" variant="secondary">
+        Medium
+      </Button>
+      <Button size="l" variant="secondary">
+        Large
+      </Button>
+    </StoryWrapper>
+    <StoryWrapper>
+      <Button size="xs" variant="secondary" disabled>
+        XSmall disabled
+      </Button>
+      <Button size="s" variant="secondary" disabled>
+        Small disabled
+      </Button>
+      <Button size="m" variant="secondary" disabled>
+        Medium disabled
+      </Button>
+      <Button size="l" variant="secondary" disabled>
+        Large disabled
+      </Button>
+    </StoryWrapper>
+    <StoryWrapper>
+      <Button size="xs" variant="secondary" stretched>
+        XSmall stretched
+      </Button>
+      <Button size="s" variant="secondary" stretched>
+        Small stretched
+      </Button>
+      <Button size="m" variant="secondary" stretched>
+        Medium stretched
+      </Button>
+      <Button size="l" variant="secondary" stretched>
+        Large stretched
+      </Button>
+    </StoryWrapper>
+    <StoryWrapper>
+      <Button size="xs" variant="secondary" stretched disabled>
+        XSmall disabled stretched
+      </Button>
+      <Button size="s" variant="secondary" stretched disabled>
+        Small disabled stretched
+      </Button>
+      <Button size="m" variant="secondary" stretched disabled>
+        Medium disabled stretched
+      </Button>
+      <Button size="l" variant="secondary" stretched disabled>
+        Large disabled stretched
+      </Button>
+    </StoryWrapper>
+  </Story>
+</Preview>
+
+## Flat
+
+<Preview>
+  <Story name="Variant: Flat">
+    <StoryWrapper>
+      <Button size="xs" variant="flat">
+        XSmall
+      </Button>
+      <Button size="s" variant="flat">
+        Small
+      </Button>
+      <Button size="m" variant="flat">
+        Medium
+      </Button>
+      <Button size="l" variant="flat">
+        Large
+      </Button>
+    </StoryWrapper>
+    <StoryWrapper>
+      <Button size="xs" variant="flat" disabled>
+        XSmall disabled
+      </Button>
+      <Button size="s" variant="flat" disabled>
+        Small disabled
+      </Button>
+      <Button size="m" variant="flat" disabled>
+        Medium disabled
+      </Button>
+      <Button size="l" variant="flat" disabled>
+        Large disabled
+      </Button>
+    </StoryWrapper>
+    <StoryWrapper>
+      <Button size="xs" variant="flat" stretched>
+        XSmall stretched
+      </Button>
+      <Button size="s" variant="flat" stretched>
+        Small stretched
+      </Button>
+      <Button size="m" variant="flat" stretched>
+        Medium stretched
+      </Button>
+      <Button size="l" variant="flat" stretched>
+        Large stretched
+      </Button>
+    </StoryWrapper>
+    <StoryWrapper>
+      <Button size="xs" variant="flat" stretched disabled>
+        XSmall disabled stretched
+      </Button>
+      <Button size="s" variant="flat" stretched disabled>
+        Small disabled stretched
+      </Button>
+      <Button size="m" variant="flat" stretched disabled>
+        Medium disabled stretched
+      </Button>
+      <Button size="l" variant="flat" stretched disabled>
+        Large disabled stretched
+      </Button>
+    </StoryWrapper>
+  </Story>
+</Preview>
+
+## Invert - black
+
+Inverted - black has the same styles as `secondary`.
+
+<Preview>
+  <Story name="Variant: Invert - black">
+    <StoryWrapper background="rgb(241, 241, 241)">
+      <Button size="xs" variant="secondary">
+        XSmall
+      </Button>
+      <Button size="s" variant="secondary">
+        Small
+      </Button>
+      <Button size="m" variant="secondary">
+        Medium
+      </Button>
+      <Button size="l" variant="secondary">
+        Large
+      </Button>
+    </StoryWrapper>
+    <StoryWrapper background="rgb(241, 241, 241)">
+      <Button size="xs" variant="secondary" disabled>
+        XSmall disabled
+      </Button>
+      <Button size="s" variant="secondary" disabled>
+        Small disabled
+      </Button>
+      <Button size="m" variant="secondary" disabled>
+        Medium disabled
+      </Button>
+      <Button size="l" variant="secondary" disabled>
+        Large disabled
+      </Button>
+    </StoryWrapper>
+    <StoryWrapper background="rgb(241, 241, 241)">
+      <Button size="xs" variant="secondary" stretched>
+        XSmall stretched
+      </Button>
+      <Button size="s" variant="secondary" stretched>
+        Small stretched
+      </Button>
+      <Button size="m" variant="secondary" stretched>
+        Medium stretched
+      </Button>
+      <Button size="l" variant="secondary" stretched>
+        Large stretched
+      </Button>
+    </StoryWrapper>
+    <StoryWrapper background="rgb(241, 241, 241)">
+      <Button size="xs" variant="secondary" stretched disabled>
+        XSmall disabled stretched
+      </Button>
+      <Button size="s" variant="secondary" stretched disabled>
+        Small disabled stretched
+      </Button>
+      <Button size="m" variant="secondary" stretched disabled>
+        Medium disabled stretched
+      </Button>
+      <Button size="l" variant="secondary" stretched disabled>
+        Large disabled stretched
+      </Button>
+    </StoryWrapper>
+  </Story>
+</Preview>
+
+## Invert - white
+
+<Preview>
+  <Story name="Variant: Invert - white">
+    <StoryWrapper background="#000">
+      <Button size="xs" variant="inverted">
+        XSmall
+      </Button>
+      <Button size="s" variant="inverted">
+        Small
+      </Button>
+      <Button size="m" variant="inverted">
+        Medium
+      </Button>
+      <Button size="l" variant="inverted">
+        Large
+      </Button>
+    </StoryWrapper>
+    <StoryWrapper background="#000">
+      <Button size="xs" variant="inverted" disabled>
+        XSmall disabled
+      </Button>
+      <Button size="s" variant="inverted" disabled>
+        Small disabled
+      </Button>
+      <Button size="m" variant="inverted" disabled>
+        Medium disabled
+      </Button>
+      <Button size="l" variant="inverted" disabled>
+        Large disabled
+      </Button>
+    </StoryWrapper>
+    <StoryWrapper background="#000">
+      <Button size="xs" variant="inverted" stretched>
+        XSmall stretched
+      </Button>
+      <Button size="s" variant="inverted" stretched>
+        Small stretched
+      </Button>
+      <Button size="m" variant="inverted" stretched>
+        Medium stretched
+      </Button>
+      <Button size="l" variant="inverted" stretched>
+        Large stretched
+      </Button>
+    </StoryWrapper>
+    <StoryWrapper background="#000">
+      <Button size="xs" variant="inverted" stretched disabled>
+        XSmall disabled stretched
+      </Button>
+      <Button size="s" variant="inverted" stretched disabled>
+        Small disabled stretched
+      </Button>
+      <Button size="m" variant="inverted" stretched disabled>
+        Medium disabled stretched
+      </Button>
+      <Button size="l" variant="inverted" stretched disabled>
+        Large disabled stretched
+      </Button>
+    </StoryWrapper>
+  </Story>
+</Preview>
+
+## Icon Button
+
+Icon buttons can optionally be `rounded`.
+
+## Flat Icon
+
+<Preview>
+  <Story name="Variant: Icon Flat">
+    <StoryWrapper>
+      <Button
+        size="xs"
+        variant="icon-flat"
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+      <Button
+        size="s"
+        variant="icon-flat"
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+      <Button
+        size="m"
+        variant="icon-flat"
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+      <Button
+        size="l"
+        variant="icon-flat"
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+      <Button
+        size="xl"
+        variant="icon-flat"
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+    </StoryWrapper>
+    <StoryWrapper>
+      <Button
+        size="xs"
+        variant="icon-flat"
+        disabled
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+      <Button
+        size="s"
+        variant="icon-flat"
+        disabled
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+      <Button
+        size="m"
+        variant="icon-flat"
+        disabled
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+      <Button
+        size="l"
+        variant="icon-flat"
+        disabled
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+      <Button
+        size="xl"
+        variant="icon-flat"
+        disabled
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+    </StoryWrapper>
+  </Story>
+</Preview>
+
+
+## Simple Icon
+
+<Preview>
+  <Story name="Variant: Icon Simple">
+    <StoryWrapper>
+      <Button
+        size="xs"
+        variant="icon-simple"
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+      <Button
+        size="s"
+        variant="icon-simple"
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+      <Button
+        size="m"
+        variant="icon-simple"
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+      <Button
+        size="l"
+        variant="icon-simple"
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+      <Button
+        size="xl"
+        variant="icon-simple"
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+    </StoryWrapper>
+    <StoryWrapper>
+      <Button
+        size="xs"
+        variant="icon-simple"
+        disabled
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+      <Button
+        size="s"
+        variant="icon-simple"
+        disabled
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+      <Button
+        size="m"
+        variant="icon-simple"
+        disabled
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+      <Button
+        size="l"
+        variant="icon-simple"
+        disabled
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+      <Button
+        size="xl"
+        variant="icon-simple"
+        disabled
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+    </StoryWrapper>
+    <StoryWrapper>
+      <Button
+        size="xs"
+        variant="icon-simple"
+        rounded
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+      <Button
+        size="s"
+        variant="icon-simple"
+        rounded
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+      <Button
+        size="m"
+        variant="icon-simple"
+        rounded
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+      <Button
+        size="l"
+        variant="icon-simple"
+        rounded
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+      <Button
+        size="xl"
+        variant="icon-simple"
+        rounded
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+    </StoryWrapper>
+    <StoryWrapper>
+      <Button
+        size="xs"
+        variant="icon-simple"
+        rounded
+        disabled
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+      <Button
+        size="s"
+        variant="icon-simple"
+        rounded
+        disabled
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+      <Button
+        size="m"
+        variant="icon-simple"
+        rounded
+        disabled
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+      <Button
+        size="l"
+        variant="icon-simple"
+        rounded
+        disabled
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+      <Button
+        size="xl"
+        variant="icon-simple"
+        rounded
+        disabled
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+    </StoryWrapper>
+  </Story>
+</Preview>
+
+## Icon with background
+
+<Preview>
+  <Story name="Variant: Icon with Background">
+    <StoryWrapper>
+      <Button
+        size="xs"
+        variant="icon-bg"
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+      <Button
+        size="s"
+        variant="icon-bg"
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+      <Button
+        size="m"
+        variant="icon-bg"
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+      <Button
+        size="l"
+        variant="icon-bg"
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+      <Button
+        size="xl"
+        variant="icon-bg"
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+    </StoryWrapper>
+    <StoryWrapper>
+      <Button
+        size="xs"
+        variant="icon-bg"
+        disabled
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+      <Button
+        size="s"
+        variant="icon-bg"
+        disabled
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+      <Button
+        size="m"
+        variant="icon-bg"
+        disabled
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+      <Button
+        size="l"
+        variant="icon-bg"
+        disabled
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+      <Button
+        size="xl"
+        variant="icon-bg"
+        disabled
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+    </StoryWrapper>
+    <StoryWrapper>
+      <Button
+        size="xs"
+        variant="icon-bg"
+        rounded
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+      <Button
+        size="s"
+        variant="icon-bg"
+        rounded
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+      <Button
+        size="m"
+        variant="icon-bg"
+        rounded
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+      <Button
+        size="l"
+        variant="icon-bg"
+        rounded
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+      <Button
+        size="xl"
+        variant="icon-bg"
+        rounded
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+    </StoryWrapper>
+    <StoryWrapper>
+      <Button
+        size="xs"
+        variant="icon-bg"
+        rounded
+        disabled
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+      <Button
+        size="s"
+        variant="icon-bg"
+        rounded
+        disabled
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+      <Button
+        size="m"
+        variant="icon-bg"
+        rounded
+        disabled
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+      <Button
+        size="l"
+        variant="icon-bg"
+        rounded
+        disabled
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+      <Button
+        size="xl"
+        variant="icon-bg"
+        rounded
+        disabled
+        icon={
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+          </svg>
+        }
+      />
+    </StoryWrapper>
+  </Story>
+</Preview>
+
+## Icon Button
+
+<Preview>
+  <Story name="Variant: Primary with Icon">
+    <StoryWrapper>
+      <Button size="xs" variant="primary"
+        icon={
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+            </svg>
+          }
+        >
+        XSmall
+      </Button>
+      <Button size="xs" variant="primary"
+        icon={
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+            </svg>
+          }
+        iconPosition="right"
+        >
+        XSmall
+      </Button>
+      <Button size="s" variant="primary"
+        icon={
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+            </svg>
+          }
+        >
+        Small
+      </Button>
+      <Button size="s" variant="primary"
+        icon={
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+            </svg>
+          }
+        iconPosition="right"
+        >
+        Small
+      </Button>
+      <Button size="m" variant="primary"
+        icon={
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+            </svg>
+          }
+        >
+        Medium
+      </Button>
+      <Button size="m" variant="primary"
+        icon={
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+            </svg>
+          }
+        iconPosition="right"
+        >
+        Medium
+      </Button>
+      <Button size="l" variant="primary"
+        icon={
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+            </svg>
+          }
+        >
+        Large
+      </Button>
+      <Button size="l" variant="primary"
+        icon={
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+            </svg>
+          }
+        iconPosition="right"
+        >
+        Large
+      </Button>
+    </StoryWrapper>
+    <StoryWrapper>
+      <Button size="xs" variant="primary" disabled
+        icon={
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+            </svg>
+          }
+        >
+        XSmall disabled
+      </Button>
+      <Button size="s" variant="primary" disabled
+        icon={
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+            </svg>
+          }
+        >
+        Small disabled
+      </Button>
+      <Button size="m" variant="primary" disabled
+        icon={
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+            </svg>
+          }
+        >
+        Medium disabled
+      </Button>
+      <Button size="l" variant="primary" disabled
+        icon={
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+            </svg>
+          }
+        >
+        Large disabled
+      </Button>
+    </StoryWrapper>
+    <StoryWrapper>
+      <Button size="xs" variant="primary" stretched
+        icon={
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+            </svg>
+          }
+        >
+        XSmall stretched
+      </Button>
+      <Button size="s" variant="primary" stretched
+        icon={
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+            </svg>
+          }
+        >
+        Small stretched
+      </Button>
+      <Button size="m" variant="primary" stretched
+        icon={
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+            </svg>
+          }
+        >
+        Medium stretched
+      </Button>
+      <Button size="l" variant="primary" stretched
+        icon={
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+            </svg>
+          }
+        >
+        Large stretched
+      </Button>
+    </StoryWrapper>
+    <StoryWrapper>
+      <Button size="xs" variant="primary" stretched disabled
+        icon={
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+            </svg>
+          }
+        >
+        XSmall disabled stretched
+      </Button>
+      <Button size="s" variant="primary" stretched disabled
+        icon={
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+            </svg>
+          }
+        >
+        Small disabled stretched
+      </Button>
+      <Button size="m" variant="primary" stretched disabled
+        icon={
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+            </svg>
+          }
+        >
+        Medium disabled stretched
+      </Button>
+      <Button size="l" variant="primary" stretched disabled
+        icon={
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+            </svg>
+          }
+        >
+        Large disabled stretched
+      </Button>
+    </StoryWrapper>
+  </Story>
+</Preview>
+
+## Secondary Icon Button
+
+<Preview>
+  <Story name="Variant: Secondary with Icon">
+    <StoryWrapper>
+      <Button size="xs" variant="secondary"
+        icon={
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+            </svg>
+          }
+        >
+        XSmall
+      </Button>
+      <Button size="xs" variant="secondary"
+        icon={
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+            </svg>
+          }
+        iconPosition="right"
+        >
+        XSmall
+      </Button>
+      <Button size="s" variant="secondary"
+        icon={
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+            </svg>
+          }
+        >
+        Small
+      </Button>
+      <Button size="s" variant="secondary"
+        icon={
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+            </svg>
+          }
+        iconPosition="right"
+        >
+        Small
+      </Button>
+      <Button size="m" variant="secondary"
+        icon={
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+            </svg>
+          }
+        >
+        Medium
+      </Button>
+      <Button size="m" variant="secondary"
+        icon={
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+            </svg>
+          }
+        iconPosition="right"
+        >
+        Medium
+      </Button>
+      <Button size="l" variant="secondary"
+        icon={
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+            </svg>
+          }
+        >
+        Large
+      </Button>
+      <Button size="l" variant="secondary"
+        icon={
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+            </svg>
+          }
+        iconPosition="right"
+        >
+        Large
+      </Button>
+    </StoryWrapper>
+    <StoryWrapper>
+      <Button size="xs" variant="secondary" disabled
+        icon={
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+            </svg>
+          }
+        >
+        XSmall disabled
+      </Button>
+      <Button size="s" variant="secondary" disabled
+        icon={
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+            </svg>
+          }
+        >
+        Small disabled
+      </Button>
+      <Button size="m" variant="secondary" disabled
+        icon={
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+            </svg>
+          }
+        >
+        Medium disabled
+      </Button>
+      <Button size="l" variant="secondary" disabled
+        icon={
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+            </svg>
+          }
+        >
+        Large disabled
+      </Button>
+    </StoryWrapper>
+    <StoryWrapper>
+      <Button size="xs" variant="secondary" stretched
+        icon={
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+            </svg>
+          }
+        >
+        XSmall stretched
+      </Button>
+      <Button size="s" variant="secondary" stretched
+        icon={
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+            </svg>
+          }
+        >
+        Small stretched
+      </Button>
+      <Button size="m" variant="secondary" stretched
+        icon={
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+            </svg>
+          }
+        >
+        Medium stretched
+      </Button>
+      <Button size="l" variant="secondary" stretched
+        icon={
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+            </svg>
+          }
+        >
+        Large stretched
+      </Button>
+    </StoryWrapper>
+    <StoryWrapper>
+      <Button size="xs" variant="secondary" stretched disabled
+        icon={
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+            </svg>
+          }
+        >
+        XSmall disabled stretched
+      </Button>
+      <Button size="s" variant="secondary" stretched disabled
+        icon={
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+            </svg>
+          }
+        >
+        Small disabled stretched
+      </Button>
+      <Button size="m" variant="secondary" stretched disabled
+        icon={
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+            </svg>
+          }
+        >
+        Medium disabled stretched
+      </Button>
+      <Button size="l" variant="secondary" stretched disabled
+        icon={
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="m62 28.49v7.06h-26.67v26.45h-6.7v-26.46h-26.63v-7.06h26.63v-26.48h6.7v26.48z"></path>
+            </svg>
+          }
+        >
+        Large disabled stretched
+      </Button>
+    </StoryWrapper>
+  </Story>
+</Preview>

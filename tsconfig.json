@@ -7,8 +7,8 @@
     "typeRoots": ["./node_modules/@types", "./types"],
     "paths": {
       "@brennstoff/basetheme": ["packages/basetheme/src"],
+      "@brennstoff/core": ["packages/core/src"],
       "@brennstoff/button": ["packages/button/src"],
-      "@brennstoff/box": ["packages/box/src"],
       "$test/*": ["test/*"]
     }
   }

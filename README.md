@@ -25,25 +25,38 @@ Release and package management:
 
 # Usage
 
-Add peer dependencies to your project:
+Install components that you want to use
 
 ```bash
-yarn add styled-components styled-system @styled-system/theme-get
+yarn add @brennstoff/core @brennstoff/button
 ```
 
-Add theme provider around your application:
+Add Brennstoff provider around your application
+and add a theme.
 
 ```javascript
-import theme, { ThemeProvider } from '@brennstoff/basetheme';
+import { Brennstoff } from '@brennstoff/core';
+import Button from '@brennstoff/button';
+
+const myTheme = {
+  colors: {
+    primary: 'black',
+  },
+  components: {
+    ...
+  }
+}
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <YourEntryComponents />
-    </ThemeProvider>
+    <Brennstoff theme={myTheme}>
+      <Button>My Button</Button>
+    </Brennstoff>
   );
 }
 ```
+
+You may use the `@brennstoff/basetheme` as a starting point.
 
 # Base commands
 

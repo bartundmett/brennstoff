@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { ThemeProvider } from '@brennstoff/theme';
+import { Brennstoff } from '@brennstoff/core';
 
 export default function FrameComponent({ theme, children }) {
-  return React.createElement(ThemeProvider, { theme, children });
+  return React.createElement(Brennstoff, { theme, children });
 }

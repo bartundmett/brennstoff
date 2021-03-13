@@ -1,4 +1,4 @@
-describe('@brennstoff/button', () => {
+describe('package-scope', () => {
   it('works', () => {
     expect(true).toBe(true);
   });

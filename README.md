@@ -224,6 +224,10 @@ Git tags for each package will be created.
 
 You can now commit and push your changes. (dont forget to push your tags as well `git push --tags`).
 
+## Attribution
+
+Flame icon by `https://www.svgrepo.com/`.
+
 ## LICENSE
 
 MIT

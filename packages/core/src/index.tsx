@@ -5,10 +5,11 @@ import {
   ThemeProvider,
 } from 'styled-components';
 import { variant } from 'styled-system';
-
-export { default as themeget } from '@styled-system/theme-get';
 import styledComponents from 'styled-components';
 import * as system from 'styled-system';
+
+export * from './forward-ref-component';
+export { default as themeget } from '@styled-system/theme-get';
 
 export const compose = system.compose;
 export const space = system.space;

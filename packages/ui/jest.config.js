@@ -1,7 +1,6 @@
 module.exports = {
   coverageDirectory: '.jest-coverage',
   coveragePathIgnorePatterns: ['.stories.tsx'],
-  coverageReporters: ['yml'],
   coverageThreshold: {
     global: {
       branches: 0,

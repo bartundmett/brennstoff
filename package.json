@@ -65,6 +65,7 @@
     "@types/styled-system__theme-get": "^5.0.1",
     "@types/yargs": "^16.0.0",
     "babel-loader": "^8.2.2",
+    "codecov": "^3.8.1",
     "concurrently": "^6.0.0",
     "cypress": "^6.6.0",
     "ejs": "^3.1.6",

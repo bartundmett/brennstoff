@@ -1,0 +1,26 @@
+name: Code Coverage
+on: [push]
+
+jobs:
+  test:
+    name: Code Coverage Report
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Use Node 14.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+
+      - run: yarn lerna bootstrap
+
+      - name: Test
+        run: yarn test --ci --maxWorkers=2 --coverage
+
+      - uses: codecov/codecov-action@v1
+        with:
+          fail_ci_if_error: true

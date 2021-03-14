@@ -167,6 +167,7 @@ Use the default theme or provide your own.
 ## Docs
 
 [Development](docs/DEVELOPMENT.md)
+[Roadmap](docs/ROADMAP.md)
 
 ## Attribution
 

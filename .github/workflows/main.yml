@@ -23,4 +23,8 @@ jobs:
       - run: yarn lerna bootstrap
 
       - name: Test
-        run: yarn test --ci --maxWorkers=2 #add coverage later
+        run: yarn test --ci --maxWorkers=2 --coverage
+
+      - uses: codecov/codecov-action@v1
+        with:
+          fail_ci_if_error: true

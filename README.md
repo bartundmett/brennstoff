@@ -6,9 +6,9 @@
 </div>
 
 <p align="center">
-<a href="https://github.com/bartundmett/brennstoff/actions">
-<img alt="Check" src="https://img.shields.io/github/checks-status/bartundmett/brennstoff/main?style=for-the-badge&labelColor=24292e">
-</a>
+<a href="https://github.com/bartundmett/brennstoff/">
+<img alt="Check" src="https://img.shields.io/codecov/c/github/bartundmett/brennstoff?style=for-the-badge&token=1FTTJG9UOP&labelColor=24292e">
+</a>    
 <a href="https://bundlephobia.com/result?p=@brennstoff/ui">
     <img alt="Bundlephobia" src="https://img.shields.io/bundlephobia/minzip/@brennstoff/ui?style=for-the-badge&labelColor=24292e">
   </a>

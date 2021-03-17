@@ -1,0 +1,34 @@
+{
+  "name": "@brennstoff/box",
+  "version": "0.0.1",
+  "description": "simple box package",
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bartundmett/brennstoff.git"
+  },
+  "homepage": "https://github.com/bartundmett/brennstoff/tree/main/packages/box",
+  "scripts": {
+    "dev": "tsdx watch --tsconfig tsconfig.build.json --verbose --noClean",
+    "build": "tsdx build --tsconfig tsconfig.build.json",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepublish": "npm run build"
+  },
+  "main": "dist/index.js",
+  "module": "dist/box.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "README.md",
+    "dist"
+  ],
+  "peerDependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "@brennstoff/core": "latest"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
+}

@@ -14,6 +14,15 @@ export { default as themeget } from '@styled-system/theme-get';
 export const compose = system.compose;
 export const space = system.space;
 export const position = system.position;
+export const color = system.color;
+export const typography = system.typography;
+export const layout = system.layout;
+export const flexbox = system.flexbox;
+export const grid = system.grid;
+export const background = system.background;
+export const border = system.border;
+export const shadow = system.shadow;
+
 export const styled: StyledInterface = styledComponents;
 
 const GlobalStyles = createGlobalStyle`
